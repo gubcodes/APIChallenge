@@ -1,3 +1,69 @@
 body {
-    background-image: url("http://placekitten.com/g/1920/1080")
+    /* background-image: url("http://placekitten.com/g/1920/1080"); */
+    padding: 10px;
+    background-image: radial-gradient(
+        #F7CE68, #FBAB7E);
+}
+.flexButton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pawsButton {
+    background-color: #5dabcd;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 80%;
+}
+.divText {
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2rem;
+    color:#FBAB7E;
+    text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    20% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1; 
+     } 
+} 
+.catPic {
+    width: 50vw;
+    height: 90vh;
+    object-fit: cover;
+    border: 12px solid;
+    border-color: #17A2B8;
+    border-radius: 4px;
 }

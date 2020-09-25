@@ -2,8 +2,9 @@
 const url = 'https://cat-fact.herokuapp.com/facts';
 const imgUrl = 'https://api.thecatapi.com/v1/images/search';
 let divText = document.querySelector('.divText');
-let pawsButton = document.querySelector('.pawsButton');
+let pawsButton = document.querySelector('.btn btn-outline-info');
 let catPic = document.querySelector('.catPic');
+let container = document.querySelector('.container');
 //random number generation
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -39,6 +40,11 @@ function imageResults(data){
     catPic.setAttribute('src', data[0].url);
 }
 
+function refreshPage() { 
+    location.reload();
+}
+
+pawsButton.addEventListener('click', refreshPage);
 
 
 // function tryThis(displayResults)

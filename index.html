@@ -8,11 +8,13 @@
     <title>Feline Facts!</title>
 </head>
 <body>
-    
-    <div class="divText"></div>
-    <button class="pawsButton" onclick="displayResults(json)">Put that paw here for a random feline fact!</button>
-    <br>
-    <img class="catPic" src="">
+    <div class="container">
+        <div class="divText"></div>
+        <div><img class="catPic" src=""></div>
+    </div>
+    <div class="flexButton">
+        <button class="btn btn-outline-info" onclick="refreshPage()">Put that paw here for another feline fact!</button>
+    </div>
 
     <!-- JS -->
     <script type="text/javascript" src="APIChallengeJava.js"></script>
