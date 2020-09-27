@@ -4,9 +4,31 @@ body {
     background-image: radial-gradient(
         #F7CE68, #FBAB7E);
 }
-.flexButton {
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color:#FBAB7E;
+    text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+.nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
 }
 .pawsButton {
@@ -61,7 +83,7 @@ body {
 } 
 .catPic {
     width: 50vw;
-    height: 90vh;
+    height: 80vh;
     object-fit: cover;
     border: 12px solid;
     border-color: #17A2B8;
